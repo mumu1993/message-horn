@@ -121,8 +121,8 @@ $(function() {
 			$(".tab-item").eq($(this).index()).addClass('active')
 			$(".page-index").eq($(this).index()).show();
 		})
-		//绑定点击事件
-	$(document).on('click', '#page2>.card,#page3>.card', function() {
+		//绑定点击事件,已发表绑定查看
+	$(document).on('click', '#page2>.card', function() {
 		var _this = this;
 		console.log(this)
 		var buttons1 = [{
@@ -224,6 +224,79 @@ $(function() {
 		var groups = [buttons1, buttons2];
 		$.actions(groups);
 	});
+	$(document).on('click', '#page3>.card', function() {
+		var _this = this;
+		console.log(this)
+		var buttons1 = [{
+				text: '请选择',
+				label: true
+			},{
+				text: '编辑',
+				bold: true,
+				color: 'white',
+				onClick: function() {
+					$.showPreloader();
+					tid = $(_this).children(".tid").html();
+					var title = $(".article" + tid).html();
+					console.log(title)
+					$.ajax({
+						type: "post",
+						url: "http://2.wxcyt.applinzi.com/chuanyintong/index.php/Home/WxFB/GetDataTxt",
+						data: {
+							tid: tid
+						},
+						complete: function() {
+							$.hidePreloader();
+						},
+						success: function(obj) {
+							$("#title").val(title);
+							// 初始化编辑器的内容
+							$("#content").html('obj');
+							editor.$txt.html('obj');
+							$(".edit_container").show();
+
+						}
+					});
+				}
+			}, {
+				text: '删除',
+				bold: true,
+				color: 'danger',
+				onClick: function() {
+					$.confirm('确定要删除文章吗？', function() {
+						$.showPreloader();
+						var tid = $(_this).children(".tid").html();
+						console.log(tid);
+						$.ajax({
+							type: "post",
+							url: "http://2.wxcyt.applinzi.com/chuanyintong/index.php/Home/WxFB/DTitle",
+							data: {
+								tid: tid
+							},
+							complete:function(){
+								$.hidePreloader();
+							},
+							success: function() {
+								$(_this).remove();
+								$.alert("删除成功！")
+							},
+							error: function() {
+								$.alert("删除失败！请重试")
+							}
+						})
+					});
+				}
+			}
+
+		];
+		var buttons2 = [{
+			text: '取消',
+			bg: 'danger'
+		}];
+		var groups = [buttons1, buttons2];
+		$.actions(groups);
+	});
+	
 	//点击开启编辑器
 	$("#to_edit").on('click', function() {
 		//		$("#page1").hide();
