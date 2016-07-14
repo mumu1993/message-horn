@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户注册</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>传声筒</title>
+		<meta name="author" content="木木" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="css/public/sm.min.css" />
+	</head>
+	<body>
+		<script src="js/public/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public/sm.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+		<!--用户协议-->
+		<div id="openid" style="display: none;">
+			
+		</div>
+		<div class="popup" id="sign">
+			<header class="bar bar-nav clear">
+				<button class="button button-link button-nav pull-left">
+			    <span class="icon icon-left"></span>
+			    返回
+			  </button>
+				<button class="button button-link button-nav pull-right">
+			    下一步
+			    <span class="icon icon-right"></span>
+			  </button>
+				<h1 class="title">用户协议</h1>
+			</header>
+			<div class="content-padded">
+				<br />
+				<h3>特别提示</h3>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京青年聚合文化传播有限公司系微信公众号青年聚合的运营商，同意按照青年聚合用户服务协议（以下称“本协议”）的规定及其不时发布的操作规则提供基于互联网的相关服务(以下称“网络服务”)，为获得网络服务，服务使用人(以下称“用户”)同意本协议的全部条款并登陆。用户在进行注册程序过程中点击“同意”按钮即表示用户完全接受本协议项下的全部条款。 本协议下的条款可由青年聚合随时变更，用户须定期审阅本协议。协议条款一旦发生变动，青年聚合将会在相关的页面上提示变更内容。变更后的协议在相关的页面上公布即有效代替原来的协议。用户如不同意青年聚合对本协议所作的任何变更，应立即停止使用青年聚合提供的服务。如用户在本协议变更后继续使用青年聚合的服务，即视作用户已完全同意变更后的协议。用户可随时造访【用户协议】查阅最新服务协议。</p>
+				<p style="color: red;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请注意：鉴于用户使用网络服务之习惯，用户有权利且有义务自使用青年聚合服务之日起每月自行主动对本服务协议之全部内容进行重新阅读，鉴于上述约定，用户因自身怠于行使该等权利或怠于履行该等义务的，无权以未获知上述内容而对相关条款的法律效力提出异议</p>
+				<h3>上传说明</h3>
+				<p>　　1、凡符合国家法律法规，由作者本人创作的作品，均可在青年聚合发表或上传。 </p>
+				<p>　　2、凡通过青年聚合发表的作品，视为作者授权青年聚合进行发表和使用。青年聚合所刊发、转载的文章，其著作权均归原作者或青年聚合与作者共同所有，如其他媒体、网站或个人从青年聚合下载使用，请在转载有关文章时务必尊重该文章的著作权，未经权利人书面许可，不得转载或下载使用于任何商业用途。 </p>
+				<p>　　3、青年聚合拒绝一切诸如反动、淫秽之类违反国家法律法规的作品，对于那些有悖社会道德伦理、政治色彩强烈的作品青年聚合不予发表。</p>
+				<p>　　4、青年聚合有权将在青年聚合内发表的文章或图片用于其他用途，包括网站、电子杂志等，文章有附带著作权声明者除外。青年聚合谢绝任何不符合青年聚合原创文学发展方向的作品。 </p>
+				<p>　　5、任何在未征得原作者或青年聚合同意，请不要转载青年聚合作品内容，违者自负法律责任。如欲转载青年聚合发表之原创作品，必须请作者或青年聚合联系并取得书面许可，并且在转载时应保留青年聚合信息。 </p>
+				<p>　　6、请上传有合法著作权的作品，如发现青年聚合有侵犯权利人著作权内容的，请向青年聚合投诉【qingnianjuhe_cst@163.com】。一经核实立即删除。 </p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;青年聚合文章仅代表作者本人的观点，不代表青年聚合的观点和看法，与青年聚合立场无关，文责作者自负。</p>
+				<h3>免责条款</h3>
+				<p>　　青年聚合使用者因为违反本条款的规定而触犯中华人民共和国法律的，一切后果自己负责，青年聚合不承担任何责任。 </p>
+				<p>　　1、属于资料和学习性质等文章，在无法与作者取得联系的前提下，青年聚合用户应保证上传后不作为任何商业用途，如作者对此有异议，可以通知青年聚合，青年聚合核实后将其删除。 </p>
+				<p>　　2、若因青年聚合产生任何诉诸于诉讼程序的法律争议，将以北京青年聚合文化传播有限公司所在地法院为管辖法院，除非中国法律对此有强制性规定。 </p>
+				<p>　　3、青年聚合之服务条款及其修改权、更新权及最终解释权均属北京青年聚合文化传播有限公司所有。 </p>
+				<p>　　4、以上条款于公布之日生效，访问者须仔细阅读并同意本条款。访问者对青年聚合包括但不限于的访问浏览、利用、上传、转载、宣传、链接等，均视为访问者同意青年聚合免责条款。 </p>
+				<p>　　若本条例与相关法律法规冲突，请以法律法规为准。</p>
+			</div>
+		</div>
+		<!--用户注册页面-->
+		<div class="page">
+
+			<header class="bar bar-nav">
+				<h1 class="title">用户注册</h1>
+			</header>
+			<div class="content" id="sign-content">
+				<div class="list-block">
+					<ul>
+						<li>
+							<div class="item-content">
+								<div class="item-media"><i class="icon icon-form-name"></i></div>
+								<div class="item-inner">
+									<div class="item-title label">昵称</div>
+									<div class="item-input">
+										<input type="text" placeholder="您发表文章使用的昵称" id="user-name" style="font-size: 0.7rem;">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-media"><i class="icon icon-form-name"></i></div>
+								<div class="item-inner">
+									<div class="item-title label"></div>
+									<div class="item-input">
+										<p class="item-input" style="padding: 0 0 0 .25rem;font-size: 0.7rem;" id="register_name"></p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-media"><i class="icon icon-form-name"></i></div>
+								<div class="item-inner">
+									<div class="item-title label">手机号码</div>
+									<div class="item-input">
+										<input type="text" placeholder="请输入手机号码" id="phone-num" style="font-size: 0.7rem;">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-media"><i class="icon icon-form-name"></i></div>
+								<div class="item-inner">
+									<div class="item-title label"></div>
+									<div class="item-input">
+										<p class="item-input" style="padding: 0 0 0 .25rem;font-size: 0.7rem;" id="register_num"></p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-media"><i class="icon icon-form-name"></i></div>
+								<div class="item-inner">
+									<label class="label-checkbox item-content" id="display">
+							            <input type="checkbox" name="checkbox" checked="checked" id="user-name-check">
+							            <div class="item-media" id="sbumit_sel"><i class="icon icon-form-checkbox"></i></div>
+							            <div class="item-inner">
+							              <a href="javascript:void(0)" id="open-sign">我已阅读并同意用户协议</a>
+							            </div>
+							         </label>
+								</div>
+							</div>
+
+						</li>
+					</ul>
+				</div>
+				<div class="content-block">
+					<div class="row">
+						<div class="col-100" id="submit-container"><a href="#" class="button button-big button-fill button-success submit" id="submit">提交</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

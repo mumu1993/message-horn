@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	    <form action="__CONTROLLER__/uploadphoto" enctype="multipart/form-data" method="post" >
+	        <input type="file" name="photo" />
+	        <input type="submit" value="上传" id="submit"/>
+		</form>
+	</body>
+</html>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript">
+	$("#submit").click(function(){
+		$.ajax({
+			url:"http://2.wxcyt.applinzi.com/chuanyintong/index.php/Home/WxFB/uploadphoto",
+			success:function(obj){
+				console.log(obj)	
+			}
+		})
+	})
+</script>

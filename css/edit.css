@@ -1,0 +1,125 @@
+#openid{
+	display: none;
+}
+#isExist{
+	display: none;
+}
+#type{
+    display: none;
+}
+.writer{
+	display: none;
+}
+.card-header::after{
+	height: 0px !important;
+}
+.tid{
+	display: none;
+}
+.item-media{
+    padding-left: .5rem;
+}
+.list-block{
+	margin: 0;
+	padding: 0;
+}
+.item-content{
+	padding: 0;
+}
+.list-block .item-content{
+	padding: 0;
+}
+#title{
+	font-size: 20px;
+}
+#writer{
+	font-size: 14px;
+}
+#display_wecheatName_out{
+	padding-right: 0;
+}
+#display_wecheatName_out:after{
+	height: 0;
+}
+#cover_out:after{
+	height: 0;
+}
+#display_wecheatName{
+	font-size: 14px;
+}
+#item-input{
+	/*float: left;
+	width: 10%;*/
+}
+#display_box{
+	width: 100%;
+	float: left;
+}
+#display{
+	position: absolute;
+	right: 0.75em;
+	top: 0;
+	height: 100%;
+}
+#editor{
+	margin: 0;
+	padding: 0;
+}
+.wangEditor-container{
+	overflow: hidden;
+	border: 0;
+	
+}
+.menu-group{
+	width: 620px;
+	position: fixed;
+	left: 0;
+	height: 34px;
+	z-index: 100;
+	border-bottom:1px solid #f1f1f1;
+	box-shadow:  0 0 5px darkgray;
+}
+.wangEditor-container h1{
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.wangEditor-container h2{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.wangEditor-container h3{
+	font-size: 16px;
+	font-weight: normal;
+}
+.wangEditor-txt{
+	height: 100%;
+}
+.wangEditor-txt p{
+	margin: 0;
+}
+.wangEditor-menu-container{
+	border-bottom: 0px !important;
+	height: 34px;
+	position: fixed;
+}
+/*.wangEditor-container .wangEditor-txt p, .wangEditor-container .wangEditor-txt h1, .wangEditor-container .wangEditor-txt h2, .wangEditor-container .wangEditor-txt h3, .wangEditor-container .wangEditor-txt h4, .wangEditor-container .wangEditor-txt h5{
+	margin: 0 !important;
+}*/
+.popup-overlay{
+	position: static;
+}
+.wangEditor-container .clearfix {
+    z-index: 100;
+}
+blockquote {
+    display: block;
+    border-left: 8px solid #d0e5f2;
+    padding: 5px 10px;
+    margin: 10px 0;
+    line-height: 1.4;
+    font-size: 100%;
+    background-color: #f1f1f1;
+}

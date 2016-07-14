@@ -1,0 +1,26 @@
+/*首页样式*/
+div[data-role="editor-toolbar"] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#sign-content{
+	position: relative;
+	top: 50%;
+	margin-top: -50%;
+}
+#open-sign{
+	text-decoration: underline;
+	font-size: 0.8rem;
+}
+#submit-container{
+	left: 50%;
+    position: relative;
+    margin-left: -18%;
+}
+.list-block>ul>.item-content{
+	padding-left: .75rem;
+}
+/*编辑器样式*/

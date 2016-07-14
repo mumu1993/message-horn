@@ -1,0 +1,47 @@
+#gooey-round{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 70px;
+	height: 70px;
+	padding: 0;
+	margin: 0;
+	min-height: 70px;
+	min-width: 70px;
+}
+.tips{
+	margin-left: -12.5% !important;
+}
+.tips2{
+	margin-left: -16.5% !important;
+}
+#share{
+	background: url(../images/83358PICrqB_1024.jpg);
+	background-size: 100% 100%;
+	/*display: none;*/
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+#know{
+	width: 25vh;
+	height: 11vh;
+	/*background: red;*/
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -22vw;
+	margin-top: -2vh;
+}
+#test{
+	width: 10vw;
+	height: 10vh;
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: white;
+	
+}
