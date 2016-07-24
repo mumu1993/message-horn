@@ -8,7 +8,7 @@ $(function() {
 		var openid = $("#openid").html();
 		$.ajax({
 			type: "post",
-			url: "http://2.wxcyt.applinzi.com/chuanyintong/index.php/Home/WxFB/ArticleList",
+			url: "http://54.222.166.50/chuanyintong/index.php/Home/WxFB/ArticleList",
 			data: {
 				sid:0,
 				openid: openid
@@ -63,7 +63,7 @@ $(function() {
 		var openid = $("#openid").html();
 		$.ajax({
 			type: "post",
-			url: "http://2.wxcyt.applinzi.com/chuanyintong/index.php/Home/WxFB/ArticleDList",
+			url: "http://54.222.166.50/chuanyintong/index.php/Home/WxFB/ArticleDList",
 			data: {
 				sid:0,
 				openid: openid
@@ -140,7 +140,7 @@ $(function() {
 
 					$.ajax({
 						type: "post",
-						url: "http://2.wxcyt.applinzi.com/chuanyintong/index.php/Home/WxFB/GetDataTxt",
+						url: "http://54.222.166.50/chuanyintong/index.php/Home/WxFB/GetDataTxt",
 						data: {
 							tid: tid
 						},
@@ -169,7 +169,7 @@ $(function() {
 					console.log(title)
 					$.ajax({
 						type: "post",
-						url: "http://2.wxcyt.applinzi.com/chuanyintong/index.php/Home/WxFB/GetDataTxt",
+						url: "http://54.222.166.50/chuanyintong/index.php/Home/WxFB/GetDataTxt",
 						data: {
 							tid: tid
 						},
@@ -197,7 +197,7 @@ $(function() {
 						console.log(tid);
 						$.ajax({
 							type: "post",
-							url: "http://2.wxcyt.applinzi.com/chuanyintong/index.php/Home/WxFB/DTitle",
+							url: "http://54.222.166.50/chuanyintong/index.php/Home/WxFB/DTitle",
 							data: {
 								tid: tid
 							},
@@ -241,7 +241,7 @@ $(function() {
 					console.log(title)
 					$.ajax({
 						type: "post",
-						url: "http://2.wxcyt.applinzi.com/chuanyintong/index.php/Home/WxFB/GetDataTxt",
+						url: "http://54.222.166.50/chuanyintong/index.php/Home/WxFB/GetDataTxt",
 						data: {
 							tid: tid
 						},
@@ -269,7 +269,7 @@ $(function() {
 						console.log(tid);
 						$.ajax({
 							type: "post",
-							url: "http://2.wxcyt.applinzi.com/chuanyintong/index.php/Home/WxFB/DTitle",
+							url: "http://54.222.166.50/chuanyintong/index.php/Home/WxFB/DTitle",
 							data: {
 								tid: tid
 							},
@@ -376,7 +376,7 @@ $(function() {
 	$("#publish,#save").click(function() {
 		$("#page1").hide();
 		var sendData = $.ajax({
-			url: "http://2.wxcyt.applinzi.com/chuanyintong/index.php/Home/WxFB/SetDataTxt",
+			url: "http://54.222.166.50/chuanyintong/index.php/Home/WxFB/SetDataTxt",
 			type: "post",
 			data: {
 				DataTxt: html,
@@ -387,7 +387,7 @@ $(function() {
 			}
 		})
 		var sendTitle = $.ajax({
-			url: "http://2.wxcyt.applinzi.com/chuanyintong/index.php/Home/WxFB/SetTitleName",
+			url: "http://54.222.166.50/chuanyintong/index.php/Home/WxFB/SetTitleName",
 			type: "post",
 			data: {
 				title: title,
@@ -431,7 +431,7 @@ $(function() {
 		_time = year + "/" + month + "/" + day + " " + hour + ":" + minute;
 		var setName = $.ajax({
 			type: "post",
-			url: "http://2.wxcyt.applinzi.com/chuanyintong/index.php/Home/WxFB/SetTxtUser",
+			url: "http://54.222.166.50/chuanyintong/index.php/Home/WxFB/SetTxtUser",
 			data: {
 				Tid: pageIndex,
 				Name: writer
@@ -442,7 +442,7 @@ $(function() {
 			}
 		});
 		var setInn = $.ajax({
-			url: "http://2.wxcyt.applinzi.com/chuanyintong/index.php/Home/WxFB/SetDraft",
+			url: "http://54.222.166.50/chuanyintong/index.php/Home/WxFB/SetDraft",
 			type: "post",
 			data: {
 				Tid: pageIndex
@@ -487,7 +487,7 @@ $(function() {
 		//设置作者
 		var setName = $.ajax({
 			type: "post",
-			url: "http://2.wxcyt.applinzi.com/chuanyintong/index.php/Home/WxFB/SetTxtUser",
+			url: "http://54.222.166.50/chuanyintong/index.php/Home/WxFB/SetTxtUser",
 			data: {
 				Tid: pageIndex,
 				Name: writer
@@ -498,7 +498,7 @@ $(function() {
 			}
 		});
 		var setInn = $.ajax({
-			url: "http://2.wxcyt.applinzi.com/chuanyintong/index.php/Home/WxFB/SetFb",
+			url: "http://54.222.166.50/chuanyintong/index.php/Home/WxFB/SetFb",
 			type: "post",
 			data: {
 				Tid: pageIndex

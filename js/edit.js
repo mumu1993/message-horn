@@ -20,7 +20,7 @@ function loadImageFile() {
 $(function() {
     var openid = $("#openid").html();
     $.ajax({
-		url:"http://2.wxcyt.applinzi.com/chuanyintong/index.php/Home/WxFB/UserNickName",
+		url:"http://54.222.166.50/chuanyintong/index.php/Home/WxFB/UserNickName",
 		type:"post",
 		data:{
 			openid:openid
@@ -32,7 +32,7 @@ $(function() {
 		}
 	})
     $.ajax({
-		url:"http://2.wxcyt.applinzi.com/chuanyintong/index.php/Home/WxFB/WXNickName",
+		url:"http://54.222.166.50/chuanyintong/index.php/Home/WxFB/WXNickName",
 		type:"post",
 		data:{
 			openid:openid
@@ -45,7 +45,7 @@ $(function() {
     //创建文章
 	$("#to_edit").click(function(){
 		$.ajax({
-			url:"http://2.wxcyt.applinzi.com/chuanyintong/index.php/Home/WxFB/selfdom",
+			url:"http://54.222.166.50/chuanyintong/index.php/Home/WxFB/selfdom",
 			type:"post",
 			data:{
 				openid: openid
@@ -75,7 +75,7 @@ $(function() {
 	var creat = function() {
 		editor = new wangEditor('textarea1');
 		// 上传图片（举例）
-		editor.config.uploadImgUrl = 'http://2.wxcyt.applinzi.com/chuanyintong/index.php/Home/WxFB/uploadphoto';
+		editor.config.uploadImgUrl = 'http://54.222.166.50/chuanyintong/index.php/Home/WxFB/uploadphoto';
 
 		// 自定义菜单
 		editor.config.menus = [ // '|' 是菜单组的分割线
