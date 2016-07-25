@@ -3596,6 +3596,9 @@ _e(function (E, $) {
             }
         };
 
+
+
+
         // 增加到editor对象中
         editor.menus[menuId] = menu;
     });

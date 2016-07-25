@@ -13,7 +13,7 @@ $(function() {
 	var openid = $("#openid").html();
 	var exist = $("#isexist").html();
 	if (exist == 2) {
-		window.location = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx8663a265c1ddd949&redirect_uri=http%3A%2F%2F54.222.166.50%2Fchuanyintong%2Findex.php%2FHome%2FWxFB%2Findex%3Fid%3D1&response_type=code&scope=snsapi_userinfo&state=#wechat_redirect"
+		window.location = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx8663a265c1ddd949&redirect_uri=http%3A%2F%2Fwww.qingnianjuhe.com%2Fchuanyintong%2Findex.php%2FHome%2FWxFB%2Findex%3Fid%3D1&response_type=code&scope=snsapi_userinfo&state=#wechat_redirect"
 	}
 	console.log(openid, 'exist=' + exist)
 	$("#user-name").keyup(function() {
@@ -26,7 +26,7 @@ $(function() {
 		}
 		if (reg1.test(userName) && userName !== "") {
 			$.ajax({
-					url: "http://54.222.166.50/chuanyintong/index.php/Home/WxFB/IsName/nickname/",
+					url: "http://www.qingnianjuhe.com/chuanyintong/index.php/Home/WxFB/IsName/nickname/",
 					type: 'post',
 					data: {
 						nickname: userName
@@ -97,7 +97,7 @@ $(function() {
 		}
 		console.log(openid)
 		$.ajax({
-			url: "http://54.222.166.50/chuanyintong/index.php/Home/WxFB/Exist",
+			url: "http://www.qingnianjuhe.com/chuanyintong/index.php/Home/WxFB/Exist",
 			type: 'post',
 			data: {
 				openid: openid,
@@ -120,7 +120,7 @@ $(function() {
 					alert("注册失败，请重试");
 				} else {
 					alert('注册成功！');
-					window.location = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx8663a265c1ddd949&redirect_uri=http%3A%2F%2F54.222.166.50%2Fchuanyintong%2Findex.php%2FHome%2FWxFB%2Findex%3Fid%3D1&response_type=code&scope=snsapi_userinfo&state=#wechat_redirect"
+					window.location = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx8663a265c1ddd949&redirect_uri=http%3A%2F%2Fwww.qingnianjuhe.com%2Fchuanyintong%2Findex.php%2FHome%2FWxFB%2Findex%3Fid%3D1&response_type=code&scope=snsapi_userinfo&state=#wechat_redirect"
 				}
 			},
 			complete: function() {
