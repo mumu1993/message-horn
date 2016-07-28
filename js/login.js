@@ -109,6 +109,7 @@ $(function() {
 			},
 			success: function(obj) {
 				$.hidePreloader();
+                console.log(obj)
 				if (obj == 1) {
 					console.log('Openid为空');
 					alert("注册失败，请重试");
@@ -116,7 +117,7 @@ $(function() {
 					console.log('phone_num为空');
 					alert("注册失败，请重试");
 				} else if (obj == 3) {
-					console.log('pNickName为空');
+					console.log('NickName为空');
 					alert("注册失败，请重试");
 				} else {
 					alert('注册成功！');

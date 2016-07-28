@@ -82,7 +82,7 @@ $(function() {
 			success: function(obj) {
 				if(obj.length == 0){
 					var card = $('<div class="card" id="text_tag"><div class="card-content"><div class="card-content-inner">还没有发布文章哦~</div></div></div>')
-					card.appendTo($("#page2"));
+					card.appendTo($("#page3"));
 				}
 				//加载文章卡片
 				console.log(obj);
